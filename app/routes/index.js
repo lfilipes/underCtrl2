@@ -11,6 +11,7 @@ var ctrlProfile = require('../controllers/profile');
 var ctrlAuth = require('../controllers/authentication');
 var ctrlGourmet = require('../controllers/gourmetController');
 var ctrlReservoir = require('../controllers/reservoirController');
+var ctrlSwitch = require('../controllers/switchController');
 
 // profile
 router.get('/profile', auth, ctrlProfile.profileRead);
@@ -43,5 +44,10 @@ router.post('/data', ctrlReservoir.wr_data);
 router.get('/data1', ctrlGourmet.rd_data);
 // gourmet Post
 router.post('/data1', ctrlGourmet.wr_data);
+
+// switch Get
+router.get('/switchArray', ctrlSwitch.rd_SwArray);
+// switch Post
+router.post('/switchArray', ctrlSwitch.wr_SwArray);
 
 module.exports = router;
