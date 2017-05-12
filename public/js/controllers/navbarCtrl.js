@@ -67,7 +67,17 @@ angular
 		  link: "espGourmet"
 		}]
 	  },
-	  
+	
+	   {
+		name: "Light Control",
+		link: "#",
+		subtree: [{
+		  name: "Light Control",
+		  link: "switch"
+		}]
+	  }
+
+	
 	  ]
 	};
 	

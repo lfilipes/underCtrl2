@@ -23,7 +23,7 @@ function config ($stateProvider,$urlRouterProvider,$locationProvider) {
 				controllerAs: 'vm'
             },
             'body': {
-                templateUrl: "partials/logout.html",
+                templateUrl: "partials/login.html",
                 controller: null
             }
         }
@@ -249,8 +249,24 @@ function config ($stateProvider,$urlRouterProvider,$locationProvider) {
 				controller: 'RadialGaugeDemoCtrl'
             }
         }
+    })
+
+	.state('switch', {
+        url: '/switch',
+
+        views: {
+            'navbar': {
+                templateUrl: "partials/navbar.html",
+                controller: "navbarCtrl",
+				controllerAs: 'vm'
+            },
+            'body': {
+				templateUrl: "partials/switchDash.html",
+				controller: "switchCtrl"
+            }
+        }
     });
-		
+	
 }
 
     function run($rootScope, $http, $location, $localStorage) {

@@ -6,7 +6,7 @@
 var mongoose = require('mongoose');
 var gracefulShutdown;
 //var dbURI = 'mongodb://localhost/sensordb';
-var dbURI = 'mongodb://lfilipe.email:mlab123@ds139949.mlab.com:39949/mlabsensordb';
+var dbURI = 'mongodb://lfilipes:mlab123@ds137801.mlab.com:37801/mlab-sensordb';
 //if (process.env.NODE_ENV === 'production') {
 //  dbURI = process.env.MONGOLAB_URI;
 //}
