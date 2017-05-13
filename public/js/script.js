@@ -24,7 +24,8 @@ function config ($stateProvider,$urlRouterProvider,$locationProvider) {
             },
             'body': {
                 templateUrl: "partials/login.html",
-                controller: null
+                controller: 'loginCtrl',
+				controllerAs: 'vm'
             }
         }
     })
